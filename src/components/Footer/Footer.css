@@ -1,0 +1,32 @@
+.footer__container {
+  background-color: #111;
+  padding: 20px 0px;
+  color: rgba(255, 255, 255, 0.939);
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 8px;
+  margin: 0px;
+
+  width: 98vw;
+}
+
+.top__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 60vw;
+}
+
+.footer__main {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 70%;
+}
+
+.footer__main ul {
+  list-style: none;
+  display: flex;
+}

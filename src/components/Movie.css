@@ -1,0 +1,38 @@
+.text-wrapper {
+  max-width: 550px;
+  text-align: left;
+  padding: 0px 10px;
+}
+
+.text-wrapper h1 {
+  padding: 10px 0px;
+  font-size: 36px;
+  line-height: 40px;
+}
+.movie__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 0px;
+  align-items: center;
+  column-gap: 30px;
+  padding-bottom: 120px;
+}
+
+.movie__container div {
+  margin-right: 20px;
+  line-height: 1.6rem;
+}
+.movie__container div h2 {
+  font-size: 32px;
+}
+
+.movie__detail {
+  height: 1200px;
+}
+button:hover {
+  color: #111;
+}
+
+@media screen and (min-width: "768px") {
+}
