@@ -18,3 +18,14 @@
 .acc__icon {
   color: #fff !important;
 }
+
+
+@media screen and (max-width : 650px){
+  .accordion{
+    padding: 0px;
+    font-size: 1px;
+  }
+  .makeStyles-secondaryHeading-3{
+    font-size: 12px !important;
+  }
+}
