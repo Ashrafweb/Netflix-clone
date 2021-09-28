@@ -29,7 +29,7 @@ const Row = ({ title, fetchUrl, isLarge }) => {
     } else {
       setSlidenum(5);
     }
-  }, [fetchUrl]);
+  }, [fetchUrl,title]);
 
   const settings = {
     dots: true,
@@ -41,11 +41,39 @@ const Row = ({ title, fetchUrl, isLarge }) => {
     autoplaySpeed: 4000,
     swipeToSlide: true,
     cssEase: "linear",
-    responsive: [
+     responsive: [
       {
         breakpoint: 1024,
         settings: {
           dots: false,
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 850,
+        settings: {
+          dots: false,
+          slidesToShow: 3,
+          className: "center",
+          centerMode: true,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          dots: false,
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          dots: false,
+          slidesToShow: 1.5,
+          className: "center",
+          centerMode: true,
+          infinite: true,
         },
       },
     ],
