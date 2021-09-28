@@ -41,14 +41,24 @@
 }
 
 @media screen and (max-width: 650px) {
+  .section{
+  
+  }
   .textWrapper {
     max-width: 90%;
   }
   .textWrapper h2 {
-    font-size: 18px;
+    font-size: 14px;
   }
   .section .textWrapper h1 {
-    font-size: 24px;
-    padding-bottom: 10px;
+    font-size: 20px;
+    padding-bottom: 5px;
+    line-height: 1.5rem;
   }
+  
+.section .start {
+  transform: translateX(0%);
+  text-align: left;
+}
+
 }
