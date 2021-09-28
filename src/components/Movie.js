@@ -18,7 +18,7 @@ function Movie(props) {
       .then((res) => {
         setMovie(res.data.results[0]);
       });
-  }, []);
+  }, [params.movie]);
 
   const Playvideo = () => {
     fetch(
@@ -63,7 +63,7 @@ function Movie(props) {
       <ScrollToTopOnMount />
       <div className="movie__container">
         <div className="img-wrapper">
-          <img src={IMG_API + movie.poster_path} />
+          <img src={IMG_API + movie.poster_path} alt={movie?.title}/>
         </div>
         <div className="text-wrapper">
           <h1>{movie.title}</h1>
@@ -80,6 +80,7 @@ function Movie(props) {
       <div className="video__container">
         {video !== null ? (
           <iframe
+            title="trailer__video"
             ref={myRef}
             className="trailer__video"
             src={`https://www.youtube.com/embed/${video}`}
